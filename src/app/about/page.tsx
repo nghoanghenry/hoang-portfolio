@@ -200,9 +200,14 @@ export default function About() {
                         {experience.timeframe}
                       </Text>
                     </Flex>
-                    <Text variant="body-default-s" onBackground="brand-weak" marginBottom="m">
-                      {experience.role}
-                    </Text>
+
+                    <Flex fillWidth horizontal="space-between" vertical="end" marginBottom="4">
+                      <Text variant="body-default-s" onBackground="brand-weak" marginBottom="m">
+                        {experience.role}
+                      </Text>
+                    </Flex>
+
+                    
                     <Column as="ul" gap="16">
                       {experience.achievements.map((achievement: JSX.Element, index: number) => (
                         <Text
@@ -214,6 +219,11 @@ export default function About() {
                         </Text>
                       ))}
                     </Column>
+                    <a href={experience.linkurl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                        <Text variant="body-default-s" onBackground="brand-weak" marginBottom="m">
+                          Link to project
+                        </Text>
+                      </a>
                     {experience.images.length > 0 && (
                       <Flex fillWidth paddingTop="m" paddingLeft="40" wrap>
                         {experience.images.map((image, index) => (

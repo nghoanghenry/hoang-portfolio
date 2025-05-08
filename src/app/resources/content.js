@@ -1,16 +1,17 @@
 import { Logo } from "@/once-ui/components";
 
+
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Nguyễn",
+  lastName: "Minh Hoàng",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Backend Fresher",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "nghoang2404@gmail.com",
+  location: "Asia/Ho_Chi_Minh", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["Vietnamese", "English"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -30,12 +31,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/nghoanghenry",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/nmhoang2404",
   },
   {
     name: "X",
@@ -55,16 +56,16 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Building the backbone of scalable systems through code</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    title: <>Recent project: <strong className="ml-4">Vivid</strong></>,
+    href: "https://github.com/nezuni1812/Vivid",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Hoàng, a passionate young backend developer eager to learn and take on large-scale projects.
+      I thrive in building robust systems and improving performance while continually expanding my skills.
     </>
   ),
 };
@@ -82,7 +83,7 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -90,55 +91,94 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
-      </>
+      I'm Hoàng, a passionate young backend developer eager to learn and take on large-scale projects.
+      I thrive in building robust systems and improving performance while continually expanding my skills.      </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Project",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Vidid - AI Video Generator",
+        linkurl: "https://flow-social-media.onrender.com/",
+        timeframe: "Jan 2025 - May 2025",
+        role: "Backend Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Designed and implemented a MongoDB database using Flask and Python to create dynamic scripts based on user prompts. 
+            Integrated Text-to-Speech (TTS) for generating audio and incorporated OCR for processing PDF and DOCX files, enabling rapid script generation.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Developed functionality to upload voice recordings, transcribing them into scripts using OpenAI Whisper. 
+            Implemented AI-driven image and video assignment to script segments for a seamless multimedia experience.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/projects/Vivid/Vivid1.png",
+            alt: "Vivid",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/Vivid/Vivid2.png",
+            alt: "Vivid",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Flow - Social Media",
+        linkurl: "https://flow-social-media.onrender.com/",
+        timeframe: "Oct 2024 - Dec 2024",
+        role: "FullStack Developer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Developed a social media platform with Express.js and REST APIs for efficient back-end data handling, integrating MongoDB and Cloudflare R2 for storage.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Implemented Infinite Scroll, Lazy Loading, and Pagination for dynamic post loading, optimizing user experience and performance.
           </>,
         ],
-        images: [],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/projects/Flow/Flow1.png",
+            alt: "Flow",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/Flow/Flow2.png",
+            alt: "Flow",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        company: "MateTalk - Chat Application",
+        linkurl: "https://www.youtube.com/watch?v=uz2EGV1mfRw",
+        timeframe: "Oct 2024 - Dec 2024",
+        role: "FullStack Developer",
+        achievements: [
+          <>
+            Developed a real-time chat application using Java Socket programming to enable communication between users.
+            Designed the MySQL database structure to support real-time interactions and user management.
+            Used Hibernate ORM for efficient object-relational mapping and database communication.
+          </>,
+          <>
+            Integrated Jakarta Mail to support email-based features (e.g. password recovery).
+            Applied Java Executors and Multithreading to handle multiple client connections concurrently.
+          </>,
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          
+        ],
       },
     ],
   },
@@ -147,12 +187,22 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "University of Science - Vietnam National University",
+        description: <>
+          Major: Software Engineering
+          <br />
+          GPA: 9.13/10.0
+          <br />
+          Pursuing a Bachelor's degree in Computer Science, specializing in Software Engineering.
+          </>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Le Hong Phong High School for the Gifted",
+        description: <>
+        GPA: 9.2/10.0
+        <br />
+        First prize in the 2021 Ho Chi Minh city Science and Engineering Fair in Robotics and Intelligent Machines field.        </>,
+     
       },
     ],
   },
@@ -161,39 +211,29 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
+        title: "Programming Languages",
+        description: <>Proficient in JavaScript (Node.js) and Java for backend development.</>,
         images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+          
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
+        title: "Libraries/Frameworks",
+        description: <>Experienced with Express.js, Spring Boot, MongoDB, MySQL, REST APIs, and ORM frameworks like Hibernate and Mongoose.</>,
         images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+          
+        ],
+      },
+      {
+        title: "Tools",
+        description: <>Skilled in using Git for version control and Docker for containerization.</>,
+        images: [
+          
         ],
       },
     ],
   },
+  
 };
 
 const blog = {
