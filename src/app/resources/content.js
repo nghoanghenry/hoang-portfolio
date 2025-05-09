@@ -101,7 +101,7 @@ const about = {
     experiences: [
       {
         company: "Vidid - AI Video Generator",
-        linkurl: "https://flow-social-media.onrender.com/",
+        linkurl: "https://github.com/nezuni1812/Vivid",
         timeframe: "Jan 2025 - May 2025",
         role: "Backend Developer",
         achievements: [
