@@ -212,21 +212,21 @@ const about = {
     skills: [
       {
         title: "Programming Languages",
-        description: <>Proficient in JavaScript (Node.js) and Java for backend development.</>,
+        description: <>JavaScript (Node.js) and Java (Spring Boot) for backend development.</>,
         images: [
           
         ],
       },
       {
         title: "Libraries/Frameworks",
-        description: <>Experienced with Express.js, Spring Boot, MongoDB, MySQL, REST APIs, and ORM frameworks like Hibernate and Mongoose.</>,
+        description: <>Express.js, Spring Boot, MongoDB, MySQL, REST APIs, and ORM frameworks like Hibernate and Mongoose.</>,
         images: [
           
         ],
       },
       {
         title: "Tools",
-        description: <>Skilled in using Git for version control and Docker for containerization.</>,
+        description: <>Using Git for version control and Docker for containerization.</>,
         images: [
           
         ],
